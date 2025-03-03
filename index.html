@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca PDF</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: #fff0f5;
+            color: #5a2a3a;
+        }
+
+        header {
+            background: linear-gradient(135deg, #ff69b4, #db7093);
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .libros-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            justify-content: center;
+        }
+
+        .libro-card {
+            background: white;
+            border-radius: 15px;
+            width: 250px;
+            padding: 1rem;
+            text-align: center;
+            transition: transform 0.3s;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .libro-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .libro-imagen {
+            width: 200px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 1rem;
+        }
+
+        .descargar-btn {
+            background: #ff69b4;
+            color: white;
+            border: none;
+            padding: 0.8rem 1.5rem;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: background 0.3s;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 1rem;
+        }
+
+        .descargar-btn:hover {
+            background: #db7093;
+        }
+
+        .libro-titulo {
+            font-size: 1.2rem;
+            margin: 0.5rem 0;
+            min-height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        @media (max-width: 768px) {
+            .libro-card {
+                width: 100%;
+            }
+            
+            .libro-imagen {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>BIBLIOTECA DE LIBROS EN PDF</h1>
+    </header>
+
+    <div class="container">
+        <div class="libros-grid">
+
+            <div class="libro-card">
+                <img src="img/rosas.jpg" alt="Portada del libro" class="libro-imagen">
+                <h3 class="libro-titulo">Una Corte de Rosas y Espinas</h3>
+                <a href="Una corte de rosas y espinas.pdf" target="_blank" class="descargar-btn" download>Descargar PDF</a>
+            </div>
+
+            <div class="libro-card">
+                <img src="img/niebla.jpg" alt="Portada del libro" class="libro-imagen">
+                <h3 class="libro-titulo">Una Corte de Niebla y Furia</h3>
+                <a href="Una corte de niebla y furia.pdf" target="_blank" class="descargar-btn" download>Descargar PDF</a>
+            </div>
+
+            <div class="libro-card">
+                <img src="img/alas.jpg" alt="Portada del libro" class="libro-imagen">
+                <h3 class="libro-titulo">Una Corte de Alas y Ruinas </h3>
+                <a href="Una corte de alas y ruinas.pdf" target="_blank" class="descargar-btn" download>Descargar PDF</a>
+            </div>
+
+            <div class="libro-card">
+                <img src="img/hielo.jpg" alt="Portada del libro" class="libro-imagen">
+                <h3 class="libro-titulo">Una Corte de Hielo y Estrellas</h3>
+                <a href="Una corte de hielo y estrellas.pdf" target="_blank" class="descargar-btn" download>Descargar PDF</a>
+            </div>
+
+            <div class="libro-card">
+                <img src="img/llamas.jpg" alt="Portada del libro" class="libro-imagen">
+                <h3 class="libro-titulo">Una Corte de Llamas Plateadas</h3>
+                <a href="Una Corte de Llamas Plateadas.pdf" target="_blank" class="descargar-btn" download>Descargar PDF</a>
+            </div>
+
+            <div class="libro-card">
+                <img src="img/xodo.jpg" alt="Portada del libro" class="libro-imagen">
+                <h3 class="libro-titulo">Xodó</h3>
+                <a href="Xodó.pdf" target="_blank" class="descargar-btn" download>Descargar PDF</a>
+            </div>
+
+            <div class="libro-card">
+                <img src="img/cora.jpg" alt="Portada del libro" class="libro-imagen">
+                <h3 class="libro-titulo">Coraline y La Puerta Secreta</h3>
+                <a href="Coraline la puerta secreta.pdf" target="_blank" class="descargar-btn" download>Descargar PDF</a>
+            </div>
+
+            <div class="libro-card">
+                <img src="img/sam.jpg" alt="Portada del libro" class="libro-imagen">
+                <h3 class="libro-titulo">Has LLamado A Sam</h3>
+                <a href="has llamado a sam.pdf" target="_blank" class="descargar-btn" download>Descargar PDF</a>
+            </div>
+
+            <div class="libro-card">
+                <img src="img/besos.jpg" alt="Portada del libro" class="libro-imagen">
+                <h3 class="libro-titulo">Mil Besos Tuyos</h3>
+                <a href="mil besos tuyos.pdf" target="_blank" class="descargar-btn" download>Descargar PDF</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
